@@ -1,5 +1,5 @@
-y<%= form_with model: [@post, Comment.new] do |form| %>
+<%= form_with model: [@post, Comment.new] do |form| %>
   New comment:<br>
-  <%= form.rich_text_area :content, size: "20x50" %>
+  <%= form.text_area :content, size: "20x5" %><br/>
   <%= form.submit %>
-<% end %>y
+<% end %>
